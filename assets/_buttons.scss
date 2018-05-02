@@ -1,0 +1,30 @@
+$buttonColors: (
+  twitter: (#1da1f2, #fff),
+  grey: (#35495e, #fff),
+  green: (#3b8070, #fff),
+  dc: (#1080d0, #fff),
+  medium: (#000c, #fff),
+  npm: (#cb3837, #fff)
+);
+
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  text-decoration: none;
+  padding: 10px 30px;
+  margin: 0 8px;
+  transition: all .15s ease-in;
+}
+
+@each $colorName, $colors in $buttonColors {
+  $bg: nth($colors, 1);
+  $color: nth($colors, 2);
+  .button--#{$colorName} {
+    border: 1px solid $bg;
+    color: $bg;
+    &:hover {
+      background: $bg;
+      color: $color;
+    }
+  }
+}
