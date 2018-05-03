@@ -37,6 +37,7 @@ module.exports = {
   },
 
   css: [
-    '@/assets/_buttons.scss'
+    '@/assets/_buttons.scss',
+    '@/assets/customFont.scss'
   ]
 }
