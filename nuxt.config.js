@@ -37,7 +37,13 @@ module.exports = {
   },
 
   css: [
-    '@/assets/_buttons.scss',
-    '@/assets/customFont.scss'
+    '@/assets/app.scss',
+  ],
+
+  modules: [
+    // Simple usage
+    ['@nuxtjs/google-analytics', {
+      id: 'UA-29425482-10'
+    }]
   ]
 }

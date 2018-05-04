@@ -15,4 +15,11 @@
 .bold {
   font-weight: bold;
 }
+
+@media screen AND (max-width: 767px) {
+  .DHLogo {
+    font-size: 5rem;
+    letter-spacing: -10px;
+  }
+}
 </style>

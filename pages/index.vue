@@ -53,6 +53,7 @@ export default {
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding: 1rem;
 }
 
 .title {
@@ -81,5 +82,19 @@ export default {
 
 .links {
   padding-top: 15px;
+}
+
+@media screen AND (max-width: 767px) {
+  .title {
+    font-size: 32px;
+  }
+
+  .subtitle {
+    font-size: 20px;
+  }
+
+  .content {
+    font-size: 16px;
+  }
 }
 </style>
