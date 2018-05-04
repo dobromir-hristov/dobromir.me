@@ -13,24 +13,28 @@
         <a
           href="https://digital-cult.com/"
           target="_blank"
+          @click="trackClick('digital_cult')"
           class="button button--dc">Digital Cult</a>
         <a
           href="https://github.com/dobromir-hristov"
           target="_blank"
+          @click="trackClick('github')"
           class="button button--grey">GitHub</a>
         <a
           href="https://twitter.com/d_m_hristov"
           target="_blank"
+          @click="trackClick('twitter')"
           class="button button--twitter">Twitter</a>
         <a
           href="https://medium.com/@dobromir92"
           target="_blank"
+          @click="trackClick('medium')"
           class="button button--medium">Medium</a>
         <a
           href="https://www.npmjs.com/~dobromir-hristov"
           target="_blank"
+          @click="trackClick('npm')"
           class="button button--npm">NPM</a>
-
       </div>
     </div>
   </section>
@@ -42,6 +46,11 @@ import AppLogo from '~/components/AppLogo.vue'
 export default {
   components: {
     AppLogo
+  },
+  methods: {
+    trackClick (type) {
+      this.$ga.event('sourceLinks', 'click', type)
+    }
   }
 }
 </script>
