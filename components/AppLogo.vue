@@ -1,25 +1,6 @@
 <template>
-  <div class="DHLogo">
-    D<span class="bold">H</span>
+  <div class="DHLogo text-blue-graphite text-10xl md:text-15xl tracking-super-tight flex items-center justify-center">
+    <div class="logo-letter--D">D</div>
+    <div class="logo-letter-H font-bold">H</div>
   </div>
 </template>
-
-<style>
-.DHLogo {
-  font-family: glacialIndifference;
-  font-size: 10rem;
-  color: #35495e;
-  letter-spacing: -20px;
-}
-
-.bold {
-  font-weight: bold;
-}
-
-@media screen AND (max-width: 767px) {
-  .DHLogo {
-    font-size: 5rem;
-    letter-spacing: -10px;
-  }
-}
-</style>

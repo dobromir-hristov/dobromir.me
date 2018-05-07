@@ -1,15 +1,17 @@
 <template>
-  <section class="container">
+  <section class="container flex justify-center items-center text-center p-1 min-h-screen mx-auto">
     <div>
       <app-logo/>
-      <h1 class="title">
+      <h1 class="title md:text-10xl block font-thin text-blue-graphite tracking-wide">
         Hi, I am Dobromir Hristov
       </h1>
-      <h2 class="subtitle">
+      <h2 class="subtitle text-blue font-light text-xl md:text-5xl mt-2 pb-8 tracking-wide">
         and I am a Frontend/JavaScript developer.
       </h2>
-      <p class="content">Bellow are links to the places where you can find my work.</p>
-      <div class="links">
+      <p class="content text-base md:text-2xl font-medium pt-8">
+        Bellow are links to the places where you can find my work.
+      </p>
+      <div class="links mt-4">
         <a
           href="https://digital-cult.com/"
           target="_blank"
@@ -54,56 +56,3 @@ export default {
   }
 }
 </script>
-
-<style>
-.container {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 1rem;
-}
-
-.title {
-  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.content {
-  margin-top: 2rem;
-  color: #44567b;
-  font-size: 22px;
-  font-weight: 500;
-}
-
-.links {
-  padding-top: 15px;
-}
-
-@media screen AND (max-width: 767px) {
-  .title {
-    font-size: 32px;
-  }
-
-  .subtitle {
-    font-size: 20px;
-  }
-
-  .content {
-    font-size: 16px;
-  }
-}
-</style>

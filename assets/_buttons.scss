@@ -3,16 +3,12 @@ $buttonColors: (
   grey: (#35495e, #fff),
   green: (#3b8070, #fff),
   dc: (#1080d0, #fff),
-  medium: (#000c, #fff),
+  medium: (hsla(0, 0%, 0%, 0.8), #fff),
   npm: (#cb3837, #fff)
 );
 
 .button {
-  display: inline-block;
-  border-radius: 4px;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin: 8px;
+  @apply inline-block py-3 px-8 my-3 mx-2 rounded no-underline;
   transition: all .15s ease-in;
 }
 
