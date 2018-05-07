@@ -6,7 +6,7 @@
         I am Dobromir Hristov
       </h1>
       <h2 class="subtitle text-blue font-light text-xl md:text-5xl mt-2 pb-8 tracking-wide">
-        and I am a JavaScript developer.
+        and I am a front-end developer.
       </h2>
       <p class="content text-base md:text-2xl font-medium pt-8">
         Bellow are links to the places where you can find my work.
