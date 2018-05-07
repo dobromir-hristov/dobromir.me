@@ -3,10 +3,10 @@
     <div>
       <app-logo/>
       <h1 class="title md:text-10xl block font-thin text-blue-graphite tracking-wide">
-        Hi, I am Dobromir Hristov
+        I am Dobromir Hristov
       </h1>
       <h2 class="subtitle text-blue font-light text-xl md:text-5xl mt-2 pb-8 tracking-wide">
-        and I am a Frontend/JavaScript developer.
+        and I am a JavaScript developer.
       </h2>
       <p class="content text-base md:text-2xl font-medium pt-8">
         Bellow are links to the places where you can find my work.
