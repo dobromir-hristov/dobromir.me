@@ -15,28 +15,38 @@
         <a
           href="https://digital-cult.com/"
           target="_blank"
-          @click="trackClick('digital_cult')"
-          class="button button--dc">Digital Cult</a>
+          class="button button--dc"
+          @click="trackClick('digital_cult')">Digital Cult</a>
         <a
           href="https://github.com/dobromir-hristov"
           target="_blank"
-          @click="trackClick('github')"
-          class="button button--grey">GitHub</a>
+          class="button button--grey"
+          @click="trackClick('github')">GitHub</a>
         <a
           href="https://twitter.com/d_m_hristov"
           target="_blank"
-          @click="trackClick('twitter')"
-          class="button button--twitter">Twitter</a>
+          class="button button--twitter"
+          @click="trackClick('twitter')">Twitter</a>
         <a
           href="https://medium.com/@dobromir92"
           target="_blank"
-          @click="trackClick('medium')"
-          class="button button--medium">Medium</a>
+          class="button button--medium"
+          @click="trackClick('medium')">Medium</a>
         <a
           href="https://www.npmjs.com/~dobromir-hristov"
           target="_blank"
-          @click="trackClick('npm')"
-          class="button button--npm">NPM</a>
+          class="button button--npm"
+          @click="trackClick('npm')">NPM</a>
+      </div>
+      <hr class="border-t border-blue-graphite border-solid">
+      <div class="cv-download">
+        <a
+          href="dobromir_hristov_cv.pdf"
+          download="dobromir_hristov_resume.pdf"
+          target="_blank"
+          class="button button--dc">
+          Download CV as PDF
+        </a>
       </div>
     </div>
   </section>
