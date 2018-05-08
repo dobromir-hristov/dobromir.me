@@ -46,7 +46,7 @@ let colors = {
   'transparent': 'transparent',
 
   'black': '#22292f',
-  'grey-darkest': '#3d4852',
+  'grey-darkest': '#414042',
   'grey-darker': '#606f7b',
 
   'grey-lightest': '#f8fafc',
@@ -119,8 +119,14 @@ module.exports = {
   */
 
   fonts: {
-    'sans': [
+    'raleway': [
       'Raleway',
+      'Fira Sans',
+      'Droid Sans',
+      'Helvetica Neue',
+      'sans-serif'
+    ],
+    'sans': [
       'system-ui',
       'BlinkMacSystemFont',
       '-apple-system',
@@ -588,7 +594,10 @@ module.exports = {
     '3': '0.75rem',
     '4': '1rem',
     '6': '1.5rem',
-    '8': '2rem'
+    '8': '2rem',
+    '10': '3rem',
+    'xl': '5rem',
+    'xxl': '10rem'
   },
 
   /*

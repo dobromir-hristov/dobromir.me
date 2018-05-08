@@ -14,7 +14,7 @@ module.exports = {
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Raleway:300,400,500,700,800' }
     ],
     bodyAttrs: {
-      class: 'font-sans text-blue-dark'
+      class: 'font-raleway text-blue-dark'
     }
   },
   /*
