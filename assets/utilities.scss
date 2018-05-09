@@ -5,3 +5,11 @@
 .font-glacial {
   font-family: glacialIndifference, sans-serif;
 }
+
+.leftColumn {
+  @apply w-2/5 px-4;
+}
+
+.rightColumn {
+  @apply w-3/5 text-left px-4;
+}

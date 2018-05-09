@@ -1,14 +1,14 @@
 <template>
   <div class="Resume w-5/6 text-grey-darkest pt-8 mx-auto">
     <div class="flex">
-      <div class="Resume-leftColumn">
+      <div class="leftColumn">
         <img
           class="rounded-full overflow-hidden w-4/5 shadow-md"
           src="avatar_square.png"
           width="500"
           alt="Avatar">
       </div>
-      <div class="Resume-rightColumn">
+      <div class="rightColumn">
         <div class="Resume-head">
           <div class="Name text-5xl font-glacial">
             DOBROMIR HRISTOV
@@ -81,17 +81,9 @@ export default {
 </script>
 
 <style rel='stylesheet/scss' lang='scss'>
-@tailwind utilities;
-
 .Resume {
   .Name {
     letter-spacing: .2em;
-  }
-  &-leftColumn {
-    @apply w-2/5 px-4;
-  }
-  &-rightColumn {
-    @apply w-3/5 text-left px-4;
   }
 }
 </style>

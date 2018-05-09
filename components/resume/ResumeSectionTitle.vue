@@ -1,11 +1,11 @@
 <template>
   <div class="ResumeSectionTitle flex mb-xl">
-    <div class="Resume-leftColumn">
+    <div class="leftColumn">
       <div class="ResumeSectionTitle__content text-right text-3xl mr-10 pb-4">
         <slot/>
       </div>
     </div>
-    <div class="Resume-rightColumn"/>
+    <div class="rightColumn"/>
   </div>
 </template>
 
