@@ -3,21 +3,21 @@
     <div class="flex flex-wrap">
       <div class="leftColumn mb-8 sm:mb-0">
         <img
-          class="rounded-full overflow-hidden w-4/5 shadow-md"
+          class="rounded-full overflow-hidden w-3/5 sm:w-4/5 shadow-md"
           src="avatar_square.jpg"
           width="325"
           alt="Avatar">
       </div>
       <div class="rightColumn">
-        <div class="Resume-head">
-          <div class="Name text-5xl font-glacial">
+        <div class="Resume-head text-center sm:text-left">
+          <div class="Name text-4xl sm:text-5xl font-glacial">
             DOBROMIR HRISTOV
           </div>
-          <div class="Position text-3xl font-light mb-8">
+          <div class="Position text-2xl sm:text-3xl font-light mb-4 sm:mb-8">
             Front-end developer
           </div>
-          <div class="flex flex-wrap font-sans font-semibold mb-6 sm:mb-xl">
-            <div class="w-full mb-6 sm:mb-0 sm:w-1/2">
+          <div class="flex flex-wrap font-sans font-semibold mb-8 sm:mb-xl">
+            <div class="w-full mb-3 sm:mb-0 sm:w-1/2">
               <a
                 :href="`mailto:${email}`"
                 class="no-underline text-inherit"
@@ -30,7 +30,7 @@
               >{{ tel }}</a>
             </div>
           </div>
-          <div class="Description tracking-wide leading-normal">
+          <div class="Description tracking-wide leading-normal text-justify">
             <p class="mb-4">
               I am a dedicated web developer, with a passion for fast, reliable,
               cutting edge software with over 5 years of experience.

@@ -1,7 +1,7 @@
 <template>
   <div
     v-observe-visibility="triggerVisibility"
-    class="ResumeSectionTitle flex mb-xl flex-wrap"
+    class="ResumeSectionTitle flex mb-8 sm:mb-xl flex-wrap"
   >
     <div class="leftColumn">
       <div
