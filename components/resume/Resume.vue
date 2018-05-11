@@ -1,7 +1,7 @@
 <template>
   <div class="Resume text-grey-darkest pt-8">
-    <div class="flex">
-      <div class="leftColumn">
+    <div class="flex flex-wrap">
+      <div class="leftColumn mb-8 sm:mb-0">
         <img
           class="rounded-full overflow-hidden w-4/5 shadow-md"
           src="avatar_square.jpg"
@@ -16,14 +16,14 @@
           <div class="Position text-3xl font-light mb-8">
             Front-end developer
           </div>
-          <div class="flex font-sans font-semibold mb-xl">
-            <div class="w-1/2">
+          <div class="flex flex-wrap font-sans font-semibold mb-6 sm:mb-xl">
+            <div class="w-full mb-6 sm:mb-0 sm:w-1/2">
               <a
                 :href="`mailto:${email}`"
                 class="no-underline text-inherit"
               >{{ email }}</a>
             </div>
-            <div class="w-1/2">
+            <div class="w-full sm:w-1/2">
               <a
                 :href="`tel:${tel}`"
                 class="no-underline text-inherit"

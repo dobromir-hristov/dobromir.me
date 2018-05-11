@@ -6,7 +6,7 @@
     <div class="leftColumn">
       <div
         :class="{ inView }"
-        class="ResumeSectionTitle__content text-right text-3xl mr-8 pb-4">
+        class="ResumeSectionTitle__content text-left sm:text-right text-3xl mr-8 pb-4">
         <slot/>
       </div>
     </div>
@@ -49,7 +49,7 @@ export default {
   &:before {
     content: '';
     position: absolute;
-    right: 0;
+    left: 0;
     top: 100%;
     height: 2px;
     width: 0;
@@ -57,6 +57,10 @@ export default {
     transform: translateX(-40px);
     @apply bg-grey-darkest;
     transition: .15s linear .6s;
+    @screen sm {
+      left: auto;
+      right: 0;
+    }
   }
   &.inView:before {
     width: 80px;

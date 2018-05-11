@@ -4,13 +4,13 @@
       <div class="topBorder bg-grey-darkest"/>
       <div class="flex flex-col flex-1 justify-center">
         <app-logo/>
-        <h1 class="title md:text-10xl block font-thin text-blue-graphite tracking-wide">
+        <h1 class="title sm:text-10xl block font-thin text-blue-graphite tracking-wide">
           I am Dobromir Hristov
         </h1>
-        <h2 class="subtitle text-blue font-light text-xl md:text-5xl mt-2 pb-8 tracking-wide">
+        <h2 class="subtitle text-blue font-light text-xl sm:text-5xl mt-2 pb-8 tracking-wide">
           and I am a front-end developer.
         </h2>
-        <p class="content text-base md:text-2xl font-medium pt-8">
+        <p class="content text-base sm:text-2xl font-medium pt-8">
           Bellow are links to the places where you can find my work.
         </p>
         <div class="links mt-10">
