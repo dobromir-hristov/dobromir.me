@@ -13,7 +13,7 @@
         <p class="content text-base md:text-2xl font-medium pt-8">
           Bellow are links to the places where you can find my work.
         </p>
-        <div class="links mt-4">
+        <div class="links mt-10">
           <a
             href="https://digital-cult.com/"
             target="_blank"

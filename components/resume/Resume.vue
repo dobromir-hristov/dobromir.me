@@ -4,8 +4,8 @@
       <div class="leftColumn">
         <img
           class="rounded-full overflow-hidden w-4/5 shadow-md"
-          src="avatar_square.png"
-          width="500"
+          src="avatar_square.jpg"
+          width="325"
           alt="Avatar">
       </div>
       <div class="rightColumn">
