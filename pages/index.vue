@@ -1,6 +1,6 @@
 <template>
   <div class="AppIndex">
-    <section class="container full-height-page px-8 pt-0 flex-col">
+    <section class="container full-height-page px-8 pt-0 flex-col introPage">
       <div class="topBorder bg-grey-darkest"/>
       <div class="flex flex-col flex-1 justify-center">
         <app-logo/>
@@ -52,8 +52,9 @@
         </div>
       </div>
     </section>
-    <section class="container full-height-page">
-      <resume/>
+    <section class="container full-height-page flex-col  resumePage relative">
+      <div class="topBorder bg-grey-darkest hidden mb-6"/>
+      <resume class="mx-auto flex-1"/>
     </section>
   </div>
 </template>
@@ -75,6 +76,10 @@ export default {
 }
 </script>
 <style>
+.resumePage {
+  page: A4;
+}
+
 .topBorder {
   height: 2rem;
 }

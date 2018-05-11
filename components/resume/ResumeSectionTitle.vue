@@ -1,25 +1,33 @@
 <template>
-  <div class="ResumeSectionTitle flex mb-xl">
+  <div class="ResumeSectionTitle flex mb-xl flex-wrap">
     <div class="leftColumn">
-      <div class="ResumeSectionTitle__content text-right text-3xl mr-10 pb-4">
+      <div
+        class="ResumeSectionTitle__content text-right text-3xl mr-8 pb-4">
         <slot/>
       </div>
     </div>
     <div class="rightColumn"/>
+    <p
+      v-if="subtitle"
+      class="leading-content-text text-left pl-6 pt-6">{{ subtitle }}</p>
   </div>
 </template>
 
 <script>
 export default {
   name: 'ResumeSectionTitle',
-  data () {
-    return {}
+  props: {
+    subtitle: {
+      type: String,
+      default: ''
+    }
   }
 }
 </script>
 
 <style rel='stylesheet/scss' lang='scss'>
 @tailwind utilities;
+
 .ResumeSectionTitle__content {
   position: relative;
   &:before {

@@ -1,3 +1,44 @@
+@page {
+  size: A4 portrait;
+  margin: 0;
+  bleed: 0;
+}
+
 .full-height-page {
   @apply flex text-center min-h-screen mx-auto;
+}
+
+.page-break-before-always {
+  page-break-before: always;
+}
+
+@media screen AND (min-width: 594px) AND (max-width: 596px) AND (max-height: 844px) {
+  html, body {
+    font-size: 12px;
+  }
+  .container {
+    max-width: none;
+    padding: 0 3rem;
+  }
+}
+
+@media print {
+  html, body {
+    font-size: 12px;
+  }
+  .container {
+    max-width: none;
+    padding: 0 3rem !important;
+  }
+  .introPage {
+    display: none;
+  }
+  .resumePage {
+    .topBorder {
+      display: block;
+    }
+  }
+  .ResumeSectionTitle__content {
+    font-size: 1.4rem;
+  }
 }

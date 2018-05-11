@@ -1,5 +1,5 @@
 <template>
-  <div class="Resume w-5/6 text-grey-darkest pt-8 mx-auto">
+  <div class="Resume text-grey-darkest pt-8">
     <div class="flex">
       <div class="leftColumn">
         <img
@@ -52,19 +52,35 @@
         </div>
       </div>
     </div>
-    <resume-section-title>Experience</resume-section-title>
-    <resume-item
-      v-for="(item, i) in jobs"
-      :key="i"
-      :item="item"/>
-    <resume-section-title>Education</resume-section-title>
-    <resume-section-title>Open Source Software</resume-section-title>
+    <div class="section mt-10">
+      <resume-section-title>Experience</resume-section-title>
+      <resume-item
+        v-for="(item, i) in jobs"
+        :key="i"
+        :item="item"/>
+    </div>
+    <div class="section mt-10 page-break-before-always">
+      <resume-section-title>Education</resume-section-title>
+      <resume-item
+        v-for="(item, i) in education"
+        :key="i"
+        :item="item"/>
+    </div>
+    <div class="section mt-10">
+      <resume-section-title :subtitle="ossSubtitle">Open Source Software</resume-section-title>
+      <resume-item
+        v-for="(item, i) in oss"
+        :key="i"
+        :item="item"
+        type="oss"/>
+    </div>
   </div>
 </template>
 
 <script>
 import ResumeSectionTitle from '~/components/resume/ResumeSectionTitle'
 import jobs from '~/data/jobs'
+import oss from '~/data/oss'
 import ResumeItem from '~/components/resume/ResumeItem'
 
 export default {
@@ -74,7 +90,14 @@ export default {
     return {
       email: 'dobromir92@gmail.com',
       tel: '+359883390558',
-      jobs: jobs
+      jobs: jobs,
+      education: [{
+        sideSubtitle: '2011-2015',
+        title: 'Technical University Gabrovo - Bachelor\'s degree',
+        subtitle: 'Computer Systems Technology'
+      }],
+      ossSubtitle: 'Bellow is a selection of my open-source packages and contributions:',
+      oss: oss
     }
   }
 }

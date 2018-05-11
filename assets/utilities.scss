@@ -7,9 +7,13 @@
 }
 
 .leftColumn {
-  @apply w-2/5 px-4;
+  @apply w-2/5 pr-3;
 }
 
 .rightColumn {
-  @apply w-3/5 text-left px-4;
+  @apply w-3/5 text-left pl-3;
+}
+
+.leading-content-text {
+  @apply text-s text-grey-lighter mb-4 leading-normal tracking-wide;
 }
