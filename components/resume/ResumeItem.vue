@@ -6,7 +6,7 @@
       :class="leftColumnClass"
       class="text-right pr-8 px-4">
       <div
-        :class="{ pop: visible }"
+        :class="{ inView }"
         class="ResumeItem-border border-t border-grey-darkest pb-6 mt-2"
       />
       <div
@@ -56,7 +56,7 @@ export default {
   },
   data () {
     return {
-      visible: false
+      inView: false
     }
   },
   computed: {
@@ -69,10 +69,8 @@ export default {
   },
   methods: {
     triggerVisibility (isVisible) {
-      if (isVisible && !this.visible) {
-        setTimeout(() => {
-          this.visible = true
-        }, 300)
+      if (isVisible && !this.inView) {
+        this.inView = true
       }
     }
   }
@@ -100,7 +98,15 @@ export default {
     top: 0;
     transition: .4s cubic-bezier(.08, .82, .57, 1.76) .6s;
   }
-  &.pop {
+  &.inView {
+    width: 100%;
+    &:after {
+      width: 10px;
+      height: 10px;
+      transform: translateY(-5px);
+    }
+  }
+  @media print {
     width: 100%;
     &:after {
       width: 10px;
@@ -110,14 +116,5 @@ export default {
   }
 }
 
-@media print {
-  .ResumeItem-border {
-    width: 100%;
-    &:after {
-      width: 10px;
-      height: 10px;
-      transform: translateY(-5px);
-    }
-  }
-}
+
 </style>
