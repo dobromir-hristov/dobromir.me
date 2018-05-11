@@ -1,9 +1,14 @@
 <template>
-  <div class="ResumeItem flex mb-10">
+  <div
+    v-observe-visibility="triggerVisibility"
+    class="ResumeItem flex mb-10">
     <div
       :class="leftColumnClass"
       class="text-right pr-8 px-4">
-      <div class="ResumeItem-border border-t border-grey-darkest pb-6 mt-2"/>
+      <div
+        :class="{ pop: visible }"
+        class="ResumeItem-border border-t border-grey-darkest pb-6 mt-2"
+      />
       <div
         v-if="item.sideTitle"
         class="ResumeItem-position font-medium mb-3 text-grey pr-4">{{ item.sideTitle }}
@@ -49,12 +54,26 @@ export default {
       validate: type => ['oss', 'normal'].includes(type)
     }
   },
+  data () {
+    return {
+      visible: false
+    }
+  },
   computed: {
     leftColumnClass () {
       return this.type === 'normal' ? 'w-2/5' : 'w-1/4'
     },
     rightColumnClass () {
       return this.type === 'normal' ? 'w-3/5' : 'w-3/4'
+    }
+  },
+  methods: {
+    triggerVisibility (isVisible) {
+      if (isVisible && !this.visible) {
+        setTimeout(() => {
+          this.visible = true
+        }, 300)
+      }
     }
   }
 }
@@ -68,16 +87,37 @@ export default {
 }
 
 .ResumeItem-border {
-  width: 100%;
+  width: 0;
   position: relative;
+  transition: .5s cubic-bezier(1, .05, .97, .02);
   &:after {
     content: '';
-    width: 10px;
-    height: 10px;
+    width: 0;
+    height: 0;
     @apply bg-grey-darkest rounded-full;
     position: absolute;
-    right: 0;
-    top: -5px;
+    right: -5px;
+    top: 0;
+    transition: .4s cubic-bezier(.08, .82, .57, 1.76) .6s;
+  }
+  &.pop {
+    width: 100%;
+    &:after {
+      width: 10px;
+      height: 10px;
+      transform: translateY(-5px);
+    }
+  }
+}
+
+@media print {
+  .ResumeItem-border {
+    width: 100%;
+    &:after {
+      width: 10px;
+      height: 10px;
+      transform: translateY(-5px);
+    }
   }
 }
 </style>

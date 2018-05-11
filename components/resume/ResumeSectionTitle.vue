@@ -1,7 +1,11 @@
 <template>
-  <div class="ResumeSectionTitle flex mb-xl flex-wrap">
+  <div
+    v-observe-visibility="triggerVisibility"
+    class="ResumeSectionTitle flex mb-xl flex-wrap"
+  >
     <div class="leftColumn">
       <div
+        :class="{ inView }"
         class="ResumeSectionTitle__content text-right text-3xl mr-8 pb-4">
         <slot/>
       </div>
@@ -21,6 +25,18 @@ export default {
       type: String,
       default: ''
     }
+  },
+  data () {
+    return {
+      inView: false
+    }
+  },
+  methods: {
+    triggerVisibility (isVisible) {
+      if (isVisible && !this.inView) {
+        this.inView = true
+      }
+    }
   }
 }
 </script>
@@ -36,8 +52,21 @@ export default {
     right: 0;
     top: 100%;
     height: 2px;
-    width: 80px;
+    width: 0;
+    transform-origin: center;
+    transform: translateX(-40px);
     @apply bg-grey-darkest;
+    transition: .15s linear .6s;
+  }
+  &.inView:before {
+    width: 80px;
+    transform: translateX(0px);
+  }
+  @media print {
+    &:before {
+      width: 80px;
+      transform: translateX(0px);
+    }
   }
 }
 </style>

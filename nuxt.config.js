@@ -49,5 +49,8 @@ module.exports = {
     ['@nuxtjs/google-analytics', {
       id: 'UA-29425482-10'
     }]
+  ],
+  plugins: [
+    { src: '~/plugins/vue-observer', ssr: false }
   ]
 }

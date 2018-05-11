@@ -14,7 +14,9 @@
   },
   "dependencies": {
     "@nuxtjs/google-analytics": "^2.0.2",
-    "nuxt": "^1.0.0"
+    "nuxt": "^1.0.0",
+    "vue": "^2.5.16",
+    "vue-observe-visibility": "^0.3.1"
   },
   "devDependencies": {
     "autoprefixer": "^8.4.1",
