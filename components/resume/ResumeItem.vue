@@ -43,8 +43,11 @@
 </template>
 
 <script>
+import observeVisibilityMixin from '~/mixins/observeVisibilityMixin'
+
 export default {
   name: 'ResumeItem',
+  mixins: [observeVisibilityMixin],
   props: {
     item: {
       type: Object,
@@ -56,24 +59,12 @@ export default {
       validate: type => ['oss', 'normal'].includes(type)
     }
   },
-  data () {
-    return {
-      inView: false
-    }
-  },
   computed: {
     leftColumnClass () {
       return this.type === 'normal' ? 'sm:w-2/5' : 'sm:w-1/4'
     },
     rightColumnClass () {
       return this.type === 'normal' ? 'sm:w-3/5' : 'sm:w-3/4'
-    }
-  },
-  methods: {
-    triggerVisibility (isVisible) {
-      if (isVisible && !this.inView) {
-        this.inView = true
-      }
     }
   }
 }

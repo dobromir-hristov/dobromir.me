@@ -3,7 +3,9 @@
     <div class="flex flex-wrap">
       <div class="leftColumn mb-8 sm:mb-0">
         <img
-          class="rounded-full overflow-hidden w-3/5 sm:w-4/5 shadow-md"
+          v-observe-visibility="triggerVisibility"
+          :class="{ inView }"
+          class="rounded-full overflow-hidden w-3/5 sm:w-4/5 shadow-md Avatar"
           src="avatar_square.jpg"
           width="325"
           alt="Avatar">
@@ -17,13 +19,13 @@
             Front-end developer
           </div>
           <div class="flex flex-wrap font-sans font-semibold mb-8 sm:mb-xl">
-            <div class="w-full mb-3 sm:mb-0 sm:w-1/2">
+            <div class="w-full mb-3 sm:mb-0 sm:flex-1">
               <a
                 :href="`mailto:${email}`"
                 class="no-underline text-inherit"
               >{{ email }}</a>
             </div>
-            <div class="w-full sm:w-1/2">
+            <div class="w-full sm:flex-1">
               <a
                 :href="`tel:${tel}`"
                 class="no-underline text-inherit"
@@ -82,10 +84,12 @@ import ResumeSectionTitle from '~/components/resume/ResumeSectionTitle'
 import jobs from '~/data/jobs'
 import oss from '~/data/oss'
 import ResumeItem from '~/components/resume/ResumeItem'
+import observeVisibilityMixin from '~/mixins/observeVisibilityMixin'
 
 export default {
   name: 'Resume',
   components: { ResumeItem, ResumeSectionTitle },
+  mixins: [observeVisibilityMixin],
   data () {
     return {
       email: 'dobromir92@gmail.com',
@@ -105,6 +109,19 @@ export default {
 
 <style rel='stylesheet/scss' lang='scss'>
 .Resume {
+  .Avatar {
+    transition: all .4s ease-in .1s;
+    transform: translateY(50px);
+    opacity: 0;
+    &.inView {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    @media print {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
   .Name {
     letter-spacing: .2em;
   }

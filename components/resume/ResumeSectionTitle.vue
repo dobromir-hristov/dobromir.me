@@ -18,24 +18,15 @@
 </template>
 
 <script>
+import observeVisibilityMixin from '~/mixins/observeVisibilityMixin'
+
 export default {
   name: 'ResumeSectionTitle',
+  mixins: [observeVisibilityMixin],
   props: {
     subtitle: {
       type: String,
       default: ''
-    }
-  },
-  data () {
-    return {
-      inView: false
-    }
-  },
-  methods: {
-    triggerVisibility (isVisible) {
-      if (isVisible && !this.inView) {
-        this.inView = true
-      }
     }
   }
 }

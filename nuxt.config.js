@@ -13,6 +13,9 @@ module.exports = {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Raleway:300,400,500,700,800' }
     ],
+    script: [
+      { src: 'https://cdn.polyfill.io/v2/polyfill.js?features=default,IntersectionObserver,Array.prototype.find' }
+    ],
     bodyAttrs: {
       class: 'font-raleway text-blue-dark'
     }
