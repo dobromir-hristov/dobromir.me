@@ -1,7 +1,7 @@
 <template>
-  <div class="DHLogo text-blue-graphite text-10xl sm:text-15xl tracking-super-tight flex items-center justify-center font-glacial">
+  <div class="DHLogo py-6 flex items-center justify-center font-glacial">
     <img
-      width="200"
+      class="md:w-48 w-24 sm:w-32"
       src="/DH.svg"
       alt="DH logo">
   </div>
