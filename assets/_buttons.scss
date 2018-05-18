@@ -10,6 +10,37 @@ $buttonColors: (
 .button {
   @apply inline-block py-3 px-8 my-3 mx-2 rounded no-underline;
   transition: all .15s ease-in;
+  &:hover {
+    .button-text-wrap {
+      transform: translate3d(0, -100%, 0);
+      .button-text {
+        opacity: 0;
+      }
+    }
+  }
+  .button-wrap {
+    overflow: hidden;
+    position: relative;
+    display: block;
+    .button-text-wrap {
+      backface-visibility: hidden;
+      display: block;
+      transition: .3s cubic-bezier(.68, -0.55, .27, 1.55);
+    }
+    .button-text {
+      display: block;
+      transition: .3s;
+    }
+    .button-pop {
+      backface-visibility: hidden;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
 }
 
 @each $colorName, $colors in $buttonColors {

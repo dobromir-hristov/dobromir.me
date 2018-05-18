@@ -15,10 +15,10 @@
         </p>
         <div class="links mt-10">
           <a
-            href="https://digital-cult.com/"
+            href="https://digital-cult.com/author/dobromir/"
             target="_blank"
             class="button button--dc"
-            @click="trackClick('digital_cult')">Digital Cult</a>
+            @click="trackClick('digital_cult')">Personal Blog</a>
           <a
             href="https://github.com/dobromir-hristov"
             target="_blank"
@@ -29,26 +29,37 @@
             target="_blank"
             class="button button--twitter"
             @click="trackClick('twitter')">Twitter</a>
-          <a
+          <d-button
+            tag="a"
+            class="button--medium"
             href="https://medium.com/@dobromir92"
-            target="_blank"
-            class="button button--medium"
-            @click="trackClick('medium')">Medium</a>
-          <a
+            icon="fa-medium fab"
+            @click="trackClick('medium')"
+          >
+            Medium
+          </d-button>
+          <d-button
+            tag="a"
+            class="button--npm"
             href="https://www.npmjs.com/~dobromir-hristov"
-            target="_blank"
-            class="button button--npm"
-            @click="trackClick('npm')">NPM</a>
+            icon="fa-npm fab"
+            @click="trackClick('npm')"
+          >
+            NPM
+          </d-button>
         </div>
         <hr class="border-t border-blue-graphite border-solid w-full">
         <div class="cv-download">
-          <a
+          <d-button
+            tag="a"
+            class="button--dc"
             href="dobromir_hristov_cv.pdf"
             download="dobromir_hristov_resume.pdf"
             target="_blank"
-            class="button button--dc">
-            Download CV as PDF
-          </a>
+            icon="far fa-file-pdf"
+          >
+            Download Resume
+          </d-button>
         </div>
       </div>
     </section>
@@ -62,9 +73,11 @@
 <script>
 import AppLogo from '~/components/AppLogo.vue'
 import Resume from '~/components/resume/Resume'
+import DButton from '~/components/button'
 
 export default {
   components: {
+    DButton,
     Resume,
     AppLogo
   },
