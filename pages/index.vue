@@ -46,7 +46,8 @@
             href="dobromir_hristov_cv.pdf"
             download="dobromir_hristov_resume.pdf"
             target="_blank"
-            class="button button--dc">
+            class="button button--dc"
+            @click="trackClick('resume')">
             Download CV as PDF
           </a>
         </div>
