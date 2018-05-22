@@ -11,7 +11,7 @@
           and I am a front-end developer.
         </h2>
         <p class="content text-base sm:text-2xl font-medium pt-8">
-          Bellow are links to the places where you can find my work.
+          Below are links to the places where you can find my work.
         </p>
         <div class="links mt-10">
           <a

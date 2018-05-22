@@ -100,7 +100,7 @@ export default {
         title: 'Technical University Gabrovo - Bachelor\'s degree',
         subtitle: 'Computer Systems Technology'
       }],
-      ossSubtitle: 'Bellow is a selection of my open-source packages and contributions:',
+      ossSubtitle: 'Below is a selection of my open-source packages and contributions:',
       oss: oss
     }
   }
