@@ -75,6 +75,12 @@
         :key="i"
         :item="item"
         type="oss"/>
+      <!-- eslint-disable vue/max-attributes-per-line -->
+      <p class="leading-content-text mb-xl m-auto w-2/3">
+        Along with packages, I have written articles, contributed to documentations, even authored a whole page in the official Vue multilingual library
+        about <a class="text-inherit no-underline font-bold" href="https://kazupon.github.io/vue-i18n/en/lazy-loading.html" target="_blank">Lazy loading translation files</a>.<br>
+        I have many open source projects and tutorials that are in the works, from advanced Vue use cases to basics that are so apparent to beginners.
+      </p>
     </div>
   </div>
 </template>
