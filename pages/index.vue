@@ -11,7 +11,7 @@
           and I am a front-end developer.
         </h2>
         <p class="content text-base sm:text-2xl font-medium pt-8">
-          Bellow are links to the places where you can find my work.
+          Below are links to the places where you can find my work.
         </p>
         <div class="links mt-10">
           <d-button
@@ -51,14 +51,12 @@
         <hr class="border-t border-blue-graphite border-solid w-full">
         <div class="cv-download">
           <d-button
-            tag="a"
             class="button--dc"
             href="dobromir_hristov_cv.pdf"
             download="dobromir_hristov_resume.pdf"
-            target="_blank"
             icon="dh dh-file-pdf-o"
-          >
-            Download Resume
+            @click="trackClick('resume')">
+            Download CV as PDF
           </d-button>
         </div>
       </div>

@@ -7,12 +7,20 @@ module.exports = {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Dobromir Hristov\'s personal website' }
+      { hid: 'description', name: 'description', content: 'Dobromir Hristov\'s personal website' },
+      { name: 'msapplication-TileColor', content: '#ff0000' },
+      { name: 'msapplication-config', content: '/fav/browserconfig.xml' },
+      { name: 'theme-color', content: '#ffffff' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Raleway:300,400,500,700,800' },
-      { rel: 'stylesheet', href: 'https://use.fontawesome.com/releases/v5.0.13/css/all.css' }
+      { rel: 'apple-touch-icon', sizes: '180x180', href: '/fav/apple-touch-icon.png' },
+      { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/fav/favicon-32x32.png' },
+      { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/fav/favicon-16x16.png' },
+      { rel: 'manifest', href: '/fav/site.webmanifest' },
+      { rel: 'mask-icon', href: '/fav/safari-pinned-tab.svg', color: '#5bbad5' },
+      { rel: 'shortcut icon', href: '/fav/favicon.ico' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Raleway:300,400,500,700,800' }
     ],
     script: [
       { src: 'https://cdn.polyfill.io/v2/polyfill.js?features=default,IntersectionObserver,Array.prototype.find' }

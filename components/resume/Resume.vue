@@ -75,6 +75,16 @@
         :key="i"
         :item="item"
         type="oss"/>
+      <!-- eslint-disable vue/max-attributes-per-line -->
+      <p class="leading-content-text mb-4 m-auto w-2/3">
+        Along with packages, I have written articles, contributed to documentations, even authored a whole page in the official Vue multilingual
+        library
+        about <a class="text-inherit no-underline font-bold" href="https://kazupon.github.io/vue-i18n/guide/lazy-loading.html" target="_blank">Lazy
+        loading translation files</a>.
+      </p>
+      <p class="leading-content-text mb-xl m-auto w-2/3">
+        I have many other open source projects and tutorials that are in the works, from tips targeted at beginners to advanced real world use cases.
+      </p>
     </div>
   </div>
 </template>
@@ -100,7 +110,7 @@ export default {
         title: 'Technical University Gabrovo - Bachelor\'s degree',
         subtitle: 'Computer Systems Technology'
       }],
-      ossSubtitle: 'Bellow is a selection of my open-source packages and contributions:',
+      ossSubtitle: 'Below is a selection of my open-source packages and contributions:',
       oss: oss
     }
   }

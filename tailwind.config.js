@@ -121,6 +121,9 @@ module.exports = {
   */
 
   fonts: {
+    'glacial': [
+      'glacialIndifference'
+    ],
     'raleway': [
       'Raleway',
       'Fira Sans',
