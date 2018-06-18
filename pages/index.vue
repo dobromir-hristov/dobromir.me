@@ -14,35 +14,35 @@
           Bellow are links to the places where you can find my work.
         </p>
         <div class="links mt-10">
-          <a
-            href="https://digital-cult.com/author/dobromir/"
-            target="_blank"
-            class="button button--dc"
-            @click="trackClick('digital_cult')">Personal Blog</a>
-          <a
-            href="https://github.com/dobromir-hristov"
-            target="_blank"
-            class="button button--grey"
-            @click="trackClick('github')">GitHub</a>
-          <a
-            href="https://twitter.com/d_m_hristov"
-            target="_blank"
-            class="button button--twitter"
-            @click="trackClick('twitter')">Twitter</a>
           <d-button
-            tag="a"
+            href="https://digital-cult.com/author/dobromir/"
+            class="button--dc"
+            icon="dh-dc dh"
+            @click="trackClick('digital_cult')">Personal Blog</d-button>
+          <d-button
+            href="https://github.com/dobromir-hristov"
+            class="button--grey"
+            icon="dh-github dh"
+            @click="trackClick('github')">GitHub</d-button>
+          <d-button
+            href="https://twitter.com/d_m_hristov"
+            class="button--twitter"
+            icon="dh-twitter dh"
+            @click="trackClick('twitter')">
+            Twitter
+          </d-button>
+          <d-button
             class="button--medium"
             href="https://medium.com/@dobromir92"
-            icon="fa-medium fab"
+            icon="dh-medium dh"
             @click="trackClick('medium')"
           >
             Medium
           </d-button>
           <d-button
-            tag="a"
             class="button--npm"
             href="https://www.npmjs.com/~dobromir-hristov"
-            icon="fa-npm fab"
+            icon="dh-npm dh"
             @click="trackClick('npm')"
           >
             NPM
@@ -56,7 +56,7 @@
             href="dobromir_hristov_cv.pdf"
             download="dobromir_hristov_resume.pdf"
             target="_blank"
-            icon="far fa-file-pdf"
+            icon="dh dh-file-pdf-o"
           >
             Download Resume
           </d-button>

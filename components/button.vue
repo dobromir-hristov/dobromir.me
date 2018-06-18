@@ -11,7 +11,9 @@
         <span class="button-pop">
           <slot name="icon">
             <i
-              :class="icon"/>
+              :class="icon"
+              class="icon"
+            />
           </slot>
         </span>
       </span>

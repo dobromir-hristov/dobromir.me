@@ -9,7 +9,7 @@ $buttonColors: (
 
 .button {
   @apply inline-block py-3 px-8 my-3 mx-2 rounded no-underline;
-  transition: all .15s ease-in;
+  transition: color 0s linear, background .15s ease-in;
   &:hover {
     .button-text-wrap {
       transform: translate3d(0, -100%, 0);
@@ -25,7 +25,7 @@ $buttonColors: (
     .button-text-wrap {
       backface-visibility: hidden;
       display: block;
-      transition: .3s cubic-bezier(.68, -0.55, .27, 1.55);
+      transition: .25s cubic-bezier(.68, -0.55, .27, 1.55);
     }
     .button-text {
       display: block;
@@ -39,6 +39,9 @@ $buttonColors: (
       width: 100%;
       height: auto;
       display: block;
+    }
+    .icon {
+      transition: none;
     }
   }
 }
