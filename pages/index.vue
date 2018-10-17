@@ -33,7 +33,7 @@
           </d-button>
           <d-button
             class="button--medium"
-            href="https://medium.com/@dobromir92"
+            href="https://medium.com/@dobromir_hristov"
             icon="dh-medium dh"
             @click="trackClick('medium')"
           >
