@@ -2,15 +2,17 @@
   <component
     :is="tag"
     target="_blank"
-    class="button">
+    class="button"
+  >
     <span class="button-wrap">
       <span class="button-text-wrap">
         <span class="button-text">
-          <slot/>
+          <slot />
         </span>
         <span class="button-pop">
           <slot name="icon">
             <i
+              v-if="icon"
               :class="icon"
               class="icon"
             />
