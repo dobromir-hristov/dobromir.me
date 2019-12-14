@@ -1,9 +1,9 @@
 <template>
   <div class="AppIndex">
     <section class="container full-height-page px-8 pt-0 flex-col introPage">
-      <div class="topBorder bg-grey-darkest"/>
+      <div class="topBorder bg-grey-darkest" />
       <div class="flex flex-col flex-1 justify-center">
-        <app-logo/>
+        <app-logo />
         <h1 class="title sm:text-10xl block font-thin text-blue-graphite tracking-wide">
           I am Dobromir Hristov
         </h1>
@@ -18,17 +18,24 @@
             href="https://digital-cult.com/author/dobromir/"
             class="button--dc"
             icon="dh-dc dh"
-            @click="trackClick('digital_cult')">Personal Blog</d-button>
+            @click="trackClick('digital_cult')"
+          >
+            Personal Blog
+          </d-button>
           <d-button
             href="https://github.com/dobromir-hristov"
             class="button--grey"
             icon="dh-github dh"
-            @click="trackClick('github')">GitHub</d-button>
+            @click="trackClick('github')"
+          >
+            GitHub
+          </d-button>
           <d-button
             href="https://twitter.com/d_m_hristov"
             class="button--twitter"
             icon="dh-twitter dh"
-            @click="trackClick('twitter')">
+            @click="trackClick('twitter')"
+          >
             Twitter
           </d-button>
           <d-button
@@ -38,6 +45,16 @@
             @click="trackClick('medium')"
           >
             Medium
+          </d-button>
+          <d-button
+            class="button--devto"
+            href="https://dev.to/dobromirhristov"
+            @click="trackClick('dev.to')"
+          >
+            Dev.to
+            <template #icon>
+              <span class="font-black">DEV</span>
+            </template>
           </d-button>
           <d-button
             class="button--npm"
@@ -55,15 +72,16 @@
             href="dobromir_hristov_cv.pdf"
             download="dobromir_hristov_resume.pdf"
             icon="dh dh-file-pdf-o"
-            @click="trackClick('resume')">
+            @click="trackClick('resume')"
+          >
             Download CV as PDF
           </d-button>
         </div>
       </div>
     </section>
     <section class="container full-height-page flex-col  resumePage relative">
-      <div class="topBorder bg-grey-darkest hidden mb-6"/>
-      <resume class="mx-auto flex-1"/>
+      <div class="topBorder bg-grey-darkest hidden mb-6" />
+      <resume class="mx-auto flex-1" />
     </section>
   </div>
 </template>
