@@ -47,9 +47,18 @@
               development and reliability, allowing front-end teams to focus on
               coding.
             </p>
-            <p>
+            <p class="mb-4">
               I enjoy writing articles, open sourcing code, authoring libraries
               and teaching people. I lead workshops and speak at conferences about Vue, Testing, App architecture etc.
+            </p>
+            <p>
+              <a
+                target="_blank"
+                class="text-blue font-medium"
+                href="https://vuebulgaria.com/"
+              >
+                Vue Bulgaria
+              </a> organizer and speaker.
             </p>
           </div>
         </div>
