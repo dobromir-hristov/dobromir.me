@@ -8,7 +8,7 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "npm run printToPdf && nuxt generate && cp _redirects dist",
+    "generate": "npm run printToPdf && nuxt generate",
     "printToPdf": "node cloud_functions/server",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "precommit": "npm run lint"
