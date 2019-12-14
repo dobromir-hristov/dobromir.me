@@ -1,11 +1,11 @@
 export default [
   {
-    sideTitle: 'Frontend developer (remote)',
+    sideTitle: 'Lead Frontend developer (remote)',
     sideSubtitle: 'Sept 2017 – Present',
     title: 'Hypefactors, Denmark',
     subtitle: 'Web based software for PR professionals.',
-    content: 'Started as a front end developer, solely developing and maintaining their Vue SPA blogging platform - Hype.news, later joined the development of the main Hypefactors product – a complex multilanguage Vue.js SPA with routing and shared state.',
-    postContent: 'JS (ES2018), Vue.js (Vuex/Vue Router), Bugsnag, Node.js, Pusher, Sass/PostCSS, Jest/Cypress testing, Webpack'
+    content: 'Started as a front end developer, solely developing and maintaining their Vue SPA blogging platform - Hype.news, later joined the development of the main Hypefactors product – a complex multilingual Vue.js SPA with routing, shared state, mono repo architecture, unit and e2e testing, and much more.',
+    postContent: 'JS (ES2016+), Vue.js (Vuex/Vue Router/Vue CLI), Bugsnag, Node.js, Pusher, Sass/PostCSS, Jest/Cypress testing'
   }, {
     sideTitle: 'Web Developer',
     sideSubtitle: 'Jan 2016 – Aug 2017',
