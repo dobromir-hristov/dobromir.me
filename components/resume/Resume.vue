@@ -8,7 +8,8 @@
           class="rounded-full overflow-hidden w-3/5 sm:w-4/5 shadow-md Avatar"
           src="avatar_square.jpg"
           width="325"
-          alt="Avatar">
+          alt="Avatar"
+        >
       </div>
       <div class="rightColumn">
         <div class="Resume-head text-center sm:text-left">
@@ -48,7 +49,7 @@
             </p>
             <p>
               I enjoy writing articles, open sourcing code, authoring libraries
-              and teaching people.
+              and teaching people. I lead workshops and speak at conferences about Vue, Testing, App architecture etc.
             </p>
           </div>
         </div>
@@ -59,14 +60,16 @@
       <resume-item
         v-for="(item, i) in jobs"
         :key="i"
-        :item="item"/>
+        :item="item"
+      />
     </div>
     <div class="section mt-10 page-break-before-always">
       <resume-section-title>Education</resume-section-title>
       <resume-item
         v-for="(item, i) in education"
         :key="i"
-        :item="item"/>
+        :item="item"
+      />
     </div>
     <div class="section mt-10">
       <resume-section-title :subtitle="ossSubtitle">Open Source Software</resume-section-title>
@@ -74,16 +77,23 @@
         v-for="(item, i) in oss"
         :key="i"
         :item="item"
-        type="oss"/>
+        type="oss"
+      />
       <!-- eslint-disable vue/max-attributes-per-line -->
       <p class="leading-content-text mb-4 m-auto w-2/3">
-        Along with packages, I have written articles, contributed to documentations, even authored a whole page in the official Vue multilingual
-        library
-        about <a class="text-inherit no-underline font-bold" href="https://kazupon.github.io/vue-i18n/guide/lazy-loading.html" target="_blank">Lazy
-        loading translation files</a>.
+        Along with packages, I have written multiple articles, contributed to many documentations, even authored a whole page in the official Vue
+        multilingual library about
+        <a
+          class="text-inherit no-underline font-bold"
+          href="https://kazupon.github.io/vue-i18n/guide/lazy-loading.html"
+          target="_blank"
+        > Lazy loading translation files</a>.
+      </p>
+      <p class="leading-content-text mb-8 m-auto w-2/3">
+        I have many other open source projects and tutorials that are in the works, from tips targeted at beginners to advanced real world use cases.
       </p>
       <p class="leading-content-text mb-xl m-auto w-2/3">
-        I have many other open source projects and tutorials that are in the works, from tips targeted at beginners to advanced real world use cases.
+        See an error? Please make a PR to fix it here: <a href="https://github.com/dobromir-hristov/dobromir.me">https://github.com/dobromir-hristov/dobromir.me</a>.
       </p>
     </div>
   </div>
@@ -123,15 +133,18 @@ export default {
     transition: all .4s ease-in .1s;
     transform: translateY(50px);
     opacity: 0;
+
     &.inView {
       transform: translateY(0);
       opacity: 1;
     }
+
     @media print {
       transform: translateY(0);
       opacity: 1;
     }
   }
+
   .Name {
     letter-spacing: .2em;
   }
