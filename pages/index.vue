@@ -15,14 +15,6 @@
         </p>
         <div class="links mt-10">
           <d-button
-            href="https://digital-cult.com/author/dobromir/"
-            class="button--dc"
-            icon="dh-dc dh"
-            @click="trackClick('digital_cult')"
-          >
-            Personal Blog
-          </d-button>
-          <d-button
             href="https://github.com/dobromir-hristov"
             class="button--grey"
             icon="dh-github dh"

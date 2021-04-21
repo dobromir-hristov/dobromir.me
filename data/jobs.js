@@ -1,7 +1,13 @@
 export default [
   {
+    sideTitle: 'Contracting as a Frontend Developer (remote)',
+    sideSubtitle: 'Jan 2020 – Present',
+    title: 'Apple',
+    content: 'Working on various amazing projects, with the tech stack I am best at.',
+  },
+  {
     sideTitle: 'Lead Frontend developer (remote)',
-    sideSubtitle: 'Sept 2017 – Present',
+    sideSubtitle: 'Sept 2017 – Jan 2020',
     title: 'Hypefactors, Denmark',
     subtitle: 'Web based software for PR professionals.',
     content: 'Started as a front end developer, solely developing and maintaining their Vue SPA blogging platform - Hype.news, later joined the development of the main Hypefactors product – a complex multilingual Vue.js SPA with routing, shared state, mono repo architecture, unit and e2e testing, and much more.',

@@ -1,8 +1,18 @@
 export default [
   {
+    title: 'Vue Test Utils',
+    content: 'Official testing utilities for Vue 3. [Core contributor]',
+    href: 'https://github.com/vuejs/vue-test-utils-next/'
+  },
+  {
     title: 'Vuelidate 2',
-    content: 'Easily validate forms in Vue.js using data driven patterns. [Core member]',
+    content: 'Form validation library for Vue.js 3/2 using data driven patterns. [Core member]',
     href: 'https://github.com/vuelidate/vuelidate'
+  },
+  {
+    title: 'vue-vimeo-player',
+    content: 'A simple to use Vimeo.com player for Vue 2/3',
+    href: 'https://github.com/dobromir-hristov/vue-vimeo-player'
   },
   {
     title: 'Vue Community Guide',

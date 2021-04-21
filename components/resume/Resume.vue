@@ -36,7 +36,7 @@
           <div class="Description tracking-wide leading-normal text-justify">
             <p class="mb-4">
               I am a dedicated web developer, with a passion for fast, reliable,
-              cutting edge software with over 5 years of experience.
+              cutting edge software, with over {{ yearsOfExp }} years of experience.
             </p>
             <p class="mb-4">
               As a front-end developer, I have been exposed to many of the
@@ -90,13 +90,7 @@
       />
       <!-- eslint-disable vue/max-attributes-per-line -->
       <p class="leading-content-text mb-4 m-auto w-2/3">
-        Along with packages, I have written multiple articles, contributed to many documentations, even authored a whole page in the official Vue
-        multilingual library about
-        <a
-          class="text-inherit no-underline font-bold"
-          href="https://kazupon.github.io/vue-i18n/guide/lazy-loading.html"
-          target="_blank"
-        > Lazy loading translation files</a>.
+        Along with packages, I have written multiple articles, spoken at conferences and much more.
       </p>
       <p class="leading-content-text mb-8 m-auto w-2/3">
         I have many other open source projects and tutorials that are in the works, from tips targeted at beginners to advanced real world use cases.
@@ -132,11 +126,14 @@ export default {
       ossSubtitle: 'Below is a selection of my open-source packages and contributions:',
       oss: oss
     }
+  },
+  computed: {
+    yearsOfExp: () => new Date().getFullYear() - 2013
   }
 }
 </script>
 
-<style rel='stylesheet/scss' lang='scss'>
+<style rel="stylesheet/scss" lang="scss">
 .Resume {
   .Avatar {
     transition: all .4s ease-in .1s;
