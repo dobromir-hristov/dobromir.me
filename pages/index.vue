@@ -44,7 +44,7 @@
             @click="trackClick('dev.to')"
           >
             Dev.to
-            <template #icon>
+            <template slot="icon">
               <span class="font-black">DEV</span>
             </template>
           </d-button>
